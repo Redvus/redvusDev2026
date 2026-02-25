@@ -1,0 +1,33 @@
+@use "sass:color";
+
+$colors: (
+    primary: #111E25,
+    secondary: #89969C,
+    third: #092330,
+    fourth: #ffffff,
+    five: #ff643c,
+);
+
+:root {
+    @each $name, $color in $colors {
+        --#{$name}: #{$color};
+        --#{$name}-darken-5: #{color.adjust($color, $lightness: -5%)};
+        --#{$name}-darken-8: #{color.adjust($color, $lightness: -8%)};
+        --#{$name}-darken-10: #{color.adjust($color, $lightness: -10%)};
+        --#{$name}-darken-13: #{color.adjust($color, $lightness: -13%)};
+        --#{$name}-darken-20: #{color.adjust($color, $lightness: -20%)};
+        --#{$name}-darken-30: #{color.adjust($color, $lightness: -30%)};
+        --#{$name}-darken-40: #{color.adjust($color, $lightness: -40%)};
+        --#{$name}-darken-50: #{color.adjust($color, $lightness: -50%)};
+        --#{$name}-darken-60: #{color.adjust($color, $lightness: -60%)};
+        --#{$name}-darken-70: #{color.adjust($color, $lightness: -70%)};
+        --#{$name}-darken-80: #{color.adjust($color, $lightness: -80%)};
+        --#{$name}-lighten-2: #{color.adjust($color, $lightness: 2%)};
+        --#{$name}-lighten-5: #{color.adjust($color, $lightness: 5%)};
+        --#{$name}-lighten-10: #{color.adjust($color, $lightness: 10%)};
+        --#{$name}-lighten-20: #{color.adjust($color, $lightness: 20%)};
+        --#{$name}-lighten-30: #{color.adjust($color, $lightness: 30%)};
+        --#{$name}-lighten-40: #{color.adjust($color, $lightness: 40%)};
+        --#{$name}-lighten-50: #{color.adjust($color, $lightness: 50%)};
+    }
+}

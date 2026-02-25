@@ -1,0 +1,122 @@
+@use "sass:color";
+@use "breakpoints" as bp;
+
+// Цветовая палитра
+$color-black: #111E25;
+$color-white: #ffffff;
+$color-gray-50: #fafafa;
+$color-gray-100: #f5f5f5;
+$color-gray-200: #e5e5e5;
+$color-gray-300: #d4d4d4;
+$color-gray-400: #a3a3a3;
+$color-gray-500: #737373;
+$color-gray-600: #525252;
+$color-gray-700: #404040;
+$color-gray-800: #262626;
+$color-gray-900: #171717;
+
+$color-red-50: #e57c7c;
+$color-red-100: #d94242;
+$color-red-200: #db6161;
+$color-red-300: #c34e4e;
+$color-red-400: #a93838;
+$color-red-500: #9b5858;
+$color-red-600: #ab2929;
+$color-red-700: #8a2d2d;
+$color-red-800: #701414;
+$color-red-900: #531818;
+
+$color-green-500: #52973b;
+$color-green-600: #3f8029;
+
+$color-blue-50: #7cb6e8;
+$color-blue-100: #6a97bf;
+$color-blue-200: #5b748b;
+$color-blue-400: #4a80ae;
+$color-blue-500: #4a7eac;
+$color-blue-600: #356b9a;
+$color-purple-600: #79309b;
+
+$color-amber-100: #b38c49;
+$color-amber-200: #a88a58;
+$color-amber-400: #996f26;
+$color-amber-600: #9d742d;
+
+// Акцентные цвета (монохромные)
+$color-accent: #000000;
+$color-accent-light: #333333;
+$color-accent-dark: #000000;
+
+// Градиенты
+$gradient-dark: linear-gradient(135deg, #000000 0%, #262626 100%);
+$gradient-light: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+$gradient-accent: linear-gradient(135deg, #000000 0%, #333333 100%);
+
+// Тени
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// Анимации
+$transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// Colors
+:root {
+    --layoutBackground: var(--primary);
+    --layoutBackgroundLight: var(--fourth);
+    --elementBackground: var(--fourth);
+
+    --headerBackgroundLight: var(--fourth);
+}
+
+// Layout
+:root {
+    --border_thin: 0.07rem;
+    --border_normal: 0.15rem;
+    --border_bold: 0.3rem;
+    --border_heavy: 0.6rem;
+
+    --base-duration: 0.2s;
+    --base-timing: 0.3s;
+
+    --header-height: 2.5rem;
+    --wrapperPadding: 10vw;
+
+    --marginBase: 1rem;
+
+    --galleryItemHeight: 40vh;
+    --galleryItemTopHeight: 75%;
+
+    --modalWidth: 75vw;
+    --modalTopHeight: 80vh;
+    --modalThumbnailsHeight: 10vh;
+    --modalButtonsHeight: calc(var(--marginBase) * 2.5);
+    --modalBorderColor: var(--fourth-darken-30);
+    --modalBorderColorDark: var(--third);
+
+    // @include bp.media-up("XLarge") {
+    //     --modalWidth: 60vw;
+    // }
+
+    // @include bp.media-up("Large") {
+    //     --modalWidth: 75vw;
+    // }
+
+    // @include bp.media-up("Medium") {
+    //     --modalWidth: 900px;
+    // }
+}
